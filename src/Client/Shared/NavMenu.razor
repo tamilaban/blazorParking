@@ -1,0 +1,25 @@
+﻿@using System.Security.Claims
+<PersonCard Style="background-color: var(--mud-palette-drawer-background);color: var(--mud-palette-drawer-text);" />
+<MudNavMenu>
+    <MudNavLink Href="/" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.Home">Home</MudNavLink>
+    <MudNavLink Href="https://fullstackhero.net/getting-started/" Match="NavLinkMatch.All"
+        Icon="@Icons.Material.Outlined.Stars">Getting Started</MudNavLink>
+    <MudText Typo="Typo.subtitle2" Color="Color.Inherit" Class="ml-4 my-3">Personal</MudText>
+    <MudNavLink Href="/dashboard" Match="NavLinkMatch.All" Icon="@Icons.Material.Outlined.Dashboard">Dashboard
+    </MudNavLink>
+    <MudNavLink Href="/account" Icon="@Icons.Material.Outlined.Person">Account</MudNavLink>
+    <MudNavLink Href="/audit-logs" Icon="@Icons.Material.Outlined.SecurityUpdateGood">Logs</MudNavLink>
+    <MudText Typo="Typo.subtitle2" Color="Color.Inherit" Class="ml-4 my-3">Management</MudText>
+    <MudNavGroup Title="Catalog" Icon="@Icons.Filled.AddBox">
+        <MudNavLink Href="/catalog/products" Icon="@Icons.Filled.ShoppingBag">
+            Products
+        </MudNavLink>
+        <MudNavLink Href="/catalog/brands" Icon="@Icons.Filled.BrandingWatermark">
+            Brands
+        </MudNavLink>
+    </MudNavGroup>
+    <MudText Typo="Typo.subtitle2" Color="Color.Inherit" Class="ml-4 my-3">Administration</MudText>
+    <MudNavLink Href="/users" Icon="@Icons.Material.Outlined.PeopleAlt">Users</MudNavLink>
+    <MudNavLink Href="/roles" Icon="@Icons.Material.Outlined.EmojiPeople">Roles</MudNavLink>
+    <MudNavLink Href="/tenants" Icon="@Icons.Material.Outlined.LocalMall">Tenants</MudNavLink>
+</MudNavMenu>

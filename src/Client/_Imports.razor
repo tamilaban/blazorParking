@@ -1,0 +1,32 @@
+﻿@using System.Net.Http
+@using System.Net.Http.Json
+@using BlazorHero.CleanArchitecture.Client.Infrastructure.Authentication
+@using FSH.BlazorWebAssembly.Client.Infrastructure.Identity.Authentication
+@using FSH.BlazorWebAssembly.Client.Managers.Preferences
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.AspNetCore.Components.WebAssembly.Http
+@using Microsoft.JSInterop
+@using FSH.BlazorWebAssembly.Client
+@using FSH.BlazorWebAssembly.Client.Shared
+@using MudBlazor
+@using Microsoft.Extensions.DependencyInjection
+
+
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+
+@using FSH.BlazorWebAssembly.Client.Pages.Authentication
+
+
+
+
+@attribute [Authorize]
+@inject ClientPreferenceManager _clientPreferenceManager
+@inject ApplicationAuthenticationStateProvider _stateProvider
+@inject NavigationManager _navigationManager
+@inject ISnackbar _snackBar
+@inject IAuthenticationService _authService;
+@inject IDialogService _dialogService
